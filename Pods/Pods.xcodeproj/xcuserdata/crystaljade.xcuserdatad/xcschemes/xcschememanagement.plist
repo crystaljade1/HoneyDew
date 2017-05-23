@@ -4,7 +4,42 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>GoogleToolboxForMac.xcscheme</key>
+		<key>GTMOAuth2-framework.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GTMOAuth2-library.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GTMSessionFetcher-framework.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GTMSessionFetcher-library.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleAPIClientForREST-framework.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleAPIClientForREST-library.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleToolboxForMac-framework.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleToolboxForMac-library.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -24,8 +59,84 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Protobuf-framework.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Protobuf-library.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>0238185C49F32314173C6E7770045FF6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>10B50031556995D39764BF23CFE62CCB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1D13EEC04080C854C4B42BAA1D599CF6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2271D820736FF1979EC9C2A290181E19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3B17E65BC9BAD87BE22DE8EDD4242CC2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>470934D7449138FAB8C70ABB910E53B5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>55A133B0D684DF1D34A724FD78C7CB6F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71A5F30981B62B8121445362A6DA437B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B25A416495BE77F8D4456013EF684BEE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B8A03667CCF5CE52BC35AD71358E4E40</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E5B116383AF3EC9DDAC3D2E51194C987</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EC96A0378B9FE9EA63ABAA1B1992E03E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC5F1C7504F32553EB7CBD5B8C3A235A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

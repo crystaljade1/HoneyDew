@@ -6,16 +6,38 @@ target 'HoneyDew' do
   use_frameworks!
 
   # Pods for HoneyDew
-  pod 'Firebase'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
+pod 'Firebase/Invites'
+pod 'Firebase/Messaging'
+pod 'Firebase/RemoteConfig'
+pod 'Firebase/Storage'
+pod ‘Firebase/Crash’
+
+end
 
   target 'HoneyDewTests' do
     inherit! :search_paths
     # Pods for testing
-  end
+  pod 'Firebase/Auth'
+pod 'Firebase/Database'
+pod 'Firebase/Invites'
+pod 'Firebase/Messaging'
+pod 'Firebase/RemoteConfig'
+pod 'Firebase/Storage'
+pod ‘Firebase/Crash’
+
+end
 
   target 'HoneyDewUITests' do
     inherit! :search_paths
     # Pods for testing
-  end
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
+pod 'Firebase/Invites'
+pod 'Firebase/Messaging'
+pod 'Firebase/RemoteConfig'
+pod 'Firebase/Storage'  
+pod ‘Firebase/Crash’
 
 end

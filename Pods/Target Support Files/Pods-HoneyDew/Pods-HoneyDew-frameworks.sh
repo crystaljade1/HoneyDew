@@ -89,10 +89,18 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/GoogleToolboxForMac/GoogleToolboxForMac.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/GTMOAuth2-framework/GTMOAuth2.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/GTMSessionFetcher-framework/GTMSessionFetcher.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/GoogleAPIClientForREST-framework/GoogleAPIClientForREST.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/GoogleToolboxForMac-framework/GoogleToolboxForMac.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Protobuf-framework/Protobuf.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/GoogleToolboxForMac/GoogleToolboxForMac.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/GTMOAuth2-framework/GTMOAuth2.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/GTMSessionFetcher-framework/GTMSessionFetcher.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/GoogleAPIClientForREST-framework/GoogleAPIClientForREST.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/GoogleToolboxForMac-framework/GoogleToolboxForMac.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Protobuf-framework/Protobuf.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
