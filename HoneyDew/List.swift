@@ -21,10 +21,10 @@ class List {
     let toDos: [ToDo]
     let createdBy: User
     let sharedWith: [User: Permissions]
-    let listID: String
+    let listID: UUID
     let title: String
     
-    init(createdBy: User, sharedWith: [User: Permissions], toDos: [ToDo], listID: String, title: String) {
+    init(createdBy: User, sharedWith: [User: Permissions], toDos: [ToDo], listID: UUID, title: String) {
         self.createdBy = createdBy
         self.sharedWith = sharedWith
         self.toDos = toDos

@@ -14,6 +14,8 @@ import GoogleSignIn
 @objc(HoneyDewViewController)
 class HoneyDewViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UINavigationControllerDelegate, InviteDelegate {
     
+    let dataSource = ListDataSource()
+    
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var addToDoButton: UIButton!
     var ref: DatabaseReference!
@@ -104,7 +106,32 @@ class HoneyDewViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.listTable .dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath)
         let toDoListSnapshot: DataSnapshot! = self.toDoList[indexPath.row]
-        guard let toDoList = toDoListSnapshot.value as? [String: String] else { return cell }
+        
+        return cell
+    }
+}
+
+class ListsDataSource: NSObject, UITableViewDataSource {
+    var lists: [List] = []
+    
+    convenience init(lists: [List]) {
+        self.init(lists: [])
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return lists.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CellReuseIdentifiers.listsViewCell) else {
+            fatalError()
+        }
+        let list = lists[indexPath.row]
+        cell.textlabel?.text = list.title
         
         return cell
     }
